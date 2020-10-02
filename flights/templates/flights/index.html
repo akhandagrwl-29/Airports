@@ -4,7 +4,7 @@
   <ol>
       {% for i in flights %}
       <a href="{% url 'flight' i.id %}">
-      <li>Flight {{i.id}} : {{i.origin}} to {{i.destination}}</li>    
+      <li style="font-size:medium; font-weight: bold;">Flight {{i.id}} : {{i.origin}} to {{i.destination}}</li>    
         </a>
         <br>
       {% endfor %}
