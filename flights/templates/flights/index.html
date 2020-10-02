@@ -1,11 +1,12 @@
 {% extends 'flights/basic.html'%}
 {% block body %}
   <h1>Flights</h1>
-  <ul>
+  <ol>
       {% for i in flights %}
       <a href="{% url 'flight' i.id %}">
       <li>Flight {{i.id}} : {{i.origin}} to {{i.destination}}</li>    
         </a>
+        <br>
       {% endfor %}
   </ul>
 {% endblock body %}
